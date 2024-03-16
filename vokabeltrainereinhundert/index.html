@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokabeltrainer mit Notizfunktion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="vokabeltrainer_bild_02.jpg" alt="Roboter an der Tastatur" width="1200" height="600">
+    </header>
+    <div class="container">
+        <h4>Vokabeltrainer mit Notizfunktion</h4>
+        <div id="flashcard">
+            <p id="vocabulary"></p>
+            <input type="text" id="translationInput" placeholder="Übersetzung eingeben">
+            <button onclick="checkTranslation()">prüf doch mal </button>
+            <p id="feedback"></p>
+            <button onclick="nextFlashcard()">next</button>
+        </div>
+        <div id="notes">
+            <h2>Notizen</h2>
+            <textarea id="notesTextarea" rows="4" cols="30" placeholder="Notizen..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
